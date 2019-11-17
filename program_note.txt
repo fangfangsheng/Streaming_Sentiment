@@ -1,1 +1,28 @@
 # twitter basis format
+
+
+
+
+## mongodb
+# show dbs
+# use twitter_collect_db
+# show collections
+# db.collectionName.find()
+# db.collectionName.count()
+
+
+#db.collectionName.find().limit(10).pretty()
+
+# This file contains newest emoji list from https://unicode.org/Public/emoji/13.0/emoji-test.txt
+# There are six columns, emoji, short name of the emoji, group, subgroup, version(first time introducing), codepoint(unicode)
+# There are 4154 emojis in total(up to data 10/20/2019).
+# There are nine categories of emojis,
+#         Smileys & Emotion : 163,
+#         People & Body: 2479,
+#         Animals & Nature: 147,
+#         Food & Drink: 131,
+#         Travel & Places: 264,
+#         Activities: 95,
+#         Objects: 301,
+#         Symbols: 299,
+#         Flags: 275
