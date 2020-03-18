@@ -24,10 +24,9 @@ db = client['twitter_collect_db']
 # Issue the serverStatus command and print the results
 collection = db['tweet_collect']
 # print('Total Record for the collection: ' + str(collection.count()))
-cursor = collection.find()  #.limit(20)
+cursor = collection.find()
 
 column_names = ['user_name','tweeted_time','full_text','num_follower','country','language','emoji']
-# full_df = pd.DataFrame(columns=column_names)
 
 file = open('co-mention-tweets.csv', 'w')
 
@@ -51,7 +50,6 @@ for data in cursor:
         # country = data['country']
         language = data['lang']
         for face in counter:
-            # print(emoji.demojize(face)[1:-1].replace('_',' '))
             emojis.append(emoji.demojize(face)[1:-1].replace('_', ' '))
             pure_text = re.sub(face, '', pure_text)
         dict_ = {'user_name': user,
@@ -64,7 +62,6 @@ for data in cursor:
         for k, v in dict_.items():
             file.write(str(v) + '>')
         file.writelines('\n')
-# full_df.to_csv(r'co-mention-tweets.csv', header=None, index = None, sep=' ', mode='w')
 
-print('Finished')
+print('Finish Extracting! ')
 
