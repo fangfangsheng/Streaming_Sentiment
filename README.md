@@ -45,11 +45,12 @@ Process:
 
 3. Run `python stream_twitter.py` to collect tweets from the Twitter Streaming API
 
-4. Run
+4. Run `python mongodb_df.py` to extract useful tweets and write in a csv file. Can take different filter statements. 
 
 
 ## Quit instructions
 
+Deactivate the venv to return to your terminal using `deactivate`.
 
 ## Usage
 
