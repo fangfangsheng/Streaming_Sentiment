@@ -132,7 +132,7 @@ data/.DS_Store
 
 
 # Configuration file
-
+*.idea
 
 # Output files
 output/*
