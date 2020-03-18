@@ -135,6 +135,7 @@ data/.DS_Store
 
 
 # Output files
+output/*
 *.txt
 *.csv
 
