@@ -139,3 +139,6 @@ output/*
 *.txt
 *.csv
 
+# VS project cache
+.vscode
+
