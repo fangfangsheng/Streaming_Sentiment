@@ -1,4 +1,4 @@
-# Streaming Twitter Filter in Python
+README.md# Streaming Twitter Filter in Python
 This is a streaming pipeline that downloads tweets, filters based on certain keywords and calculates 
 sentiment scores. 
 

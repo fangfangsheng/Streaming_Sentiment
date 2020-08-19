@@ -130,7 +130,6 @@ dmypy.json
 .DS_Store
 data/.DS_Store
 
-
 # Configuration file
 *.idea
 
@@ -141,4 +140,7 @@ output/*
 
 # VS project cache
 .vscode
+
+# Dismiss configuration file
+config.py
 

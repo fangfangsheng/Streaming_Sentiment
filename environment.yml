@@ -1,0 +1,21 @@
+name: Streaming_Twitter
+channels:
+- conda-forge
+dependencies:
+- python=3.8.5
+- numpy=1.19.1
+- pandas=1.1.0
+- matplotlib=3.3.1
+- jupyter
+- jupyterlab
+- scipy=1.5.2
+- scikit-learn=0.23.2
+- pyprojroot=0.2.0
+- ipykernel=5.1.4
+- pytest=6.0.1
+- pymongo==3.10.1
+- requests==2.23.0
+- tweepy==3.8.0
+- pip  # don't pin this version, we always want latest
+- pip:
+  - -e src/.  # this installs your custom package in development mode.
