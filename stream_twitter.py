@@ -7,6 +7,8 @@ import os,sys,re
 import json
 import config
 import datetime
+from textblob import TextBlob
+from tweet_store import TweetStore
 
 
 CONSUMER_KEY = config.twitter_api['consumer_key']
@@ -15,7 +17,7 @@ ACCESS_TOKEN = config.twitter_api['access_token']
 ACCESS_SERECT = config.twitter_api['access_secret']
 
 KEYWORDS = list(config.keyword)
-
+store = TweetStore()
 
 class MyStreamListener(tweepy.StreamListener):
     """
@@ -28,15 +30,22 @@ class MyStreamListener(tweepy.StreamListener):
     def on_status(self, status):
         try:
             if ('RT @' not in status.text):
+                blob = TextBlob(status.text)
+                sent = blob.sentiment
+                polarity = sent.polarity
+                subjectivity = sent.subjectivity
                 tweet_item = {
                     'id_str': status.id_str,
                     'text': status.text,
+                    'polarity': polarity,
+                    'subjectivity': subjectivity,
                     'username': status.user.screen_name,
                     'name': status.user.name,
                     'profile_image_url': status.user.profile_image_url,
                     'received_at': datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
                 }
-                print(tweet_item)
+                store.push(tweet_item)
+                print('Push to redis:', tweet_item)
         except Exception as e:
             print(e)
 

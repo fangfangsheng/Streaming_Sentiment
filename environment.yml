@@ -16,6 +16,9 @@ dependencies:
 - pymongo==3.10.1
 - requests==2.23.0
 - tweepy==3.8.0
+- textblob==0.15.3
+- flask==1.1.2
 - pip  # don't pin this version, we always want latest
 - pip:
   - -e src/.  # this installs your custom package in development mode.
+  - redis

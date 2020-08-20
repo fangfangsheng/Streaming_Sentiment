@@ -8,6 +8,12 @@ I use `tweepy` to get streaming data. To storage the data, I use Redis. One dash
 
 ```python
 
+redis-server
+
+python stream_twitter.py
+
+python twatcher.py
+
 ```
 
 ## Contributing
