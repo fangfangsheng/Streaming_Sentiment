@@ -1,0 +1,102 @@
+appnope==0.1.0
+argon2-cffi @ file:///Users/runner/miniforge3/conda-bld/argon2-cffi_1596629858645/work
+attrs==19.3.0
+backcall @ file:///home/conda/feedstock_root/build_artifacts/backcall_1592338393461/work
+backports.functools-lru-cache==1.6.1
+bleach @ file:///home/conda/feedstock_root/build_artifacts/bleach_1588608214987/work
+blinker==1.4
+brotlipy==0.7.0
+certifi==2020.6.20
+cffi @ file:///Users/runner/miniforge3/conda-bld/cffi_1595805531819/work
+chardet==3.0.4
+click==7.1.2
+cryptography @ file:///Users/runner/miniforge3/conda-bld/cryptography_1595348779745/work
+cycler==0.10.0
+decorator==4.4.2
+defusedxml==0.6.0
+entrypoints==0.3
+Flask==1.1.2
+gunicorn==20.0.4
+idna @ file:///home/conda/feedstock_root/build_artifacts/idna_1593328102638/work
+importlib-metadata @ file:///Users/runner/miniforge3/conda-bld/importlib-metadata_1593211382425/work
+iniconfig @ file:///home/conda/feedstock_root/build_artifacts/iniconfig_1596221474428/work
+ipykernel==5.1.4
+ipython @ file:///Users/runner/miniforge3/conda-bld/ipython_1596287190072/work
+ipython-genutils==0.2.0
+ipywidgets==7.5.1
+itsdangerous==1.1.0
+jedi @ file:///Users/runner/miniforge3/conda-bld/jedi_1595018318924/work
+Jinja2==2.11.2
+joblib @ file:///home/conda/feedstock_root/build_artifacts/joblib_1593624380152/work
+json5 @ file:///home/conda/feedstock_root/build_artifacts/json5_1591810480056/work
+jsonschema==3.2.0
+jupyter-client @ file:///home/conda/feedstock_root/build_artifacts/jupyter_client_1594732094290/work
+jupyter-console==6.1.0
+jupyter-core==4.6.3
+jupyterlab==2.2.6
+jupyterlab-server @ file:///home/conda/feedstock_root/build_artifacts/jupyterlab_server_1593951277307/work
+kiwisolver==1.2.0
+MarkupSafe==1.1.1
+matplotlib @ file:///Users/runner/miniforge3/conda-bld/matplotlib-base_1597428382099/work
+mistune==0.8.4
+more-itertools @ file:///home/conda/feedstock_root/build_artifacts/more-itertools_1592197792446/work
+nbconvert==5.6.1
+nbformat @ file:///home/conda/feedstock_root/build_artifacts/nbformat_1594060262917/work
+nltk==3.4.4
+notebook @ file:///Users/runner/miniforge3/conda-bld/notebook_1597285253098/work
+numpy @ file:///Users/runner/miniforge3/conda-bld/numpy_1597938353960/work
+oauthlib==3.0.1
+olefile==0.46
+packaging @ file:///home/conda/feedstock_root/build_artifacts/packaging_1589925210001/work
+pandas @ file:///Users/runner/miniforge3/conda-bld/pandas_1595958467299/work
+pandocfilters==1.4.2
+parso @ file:///home/conda/feedstock_root/build_artifacts/parso_1595548966091/work
+pexpect==4.8.0
+pickleshare==0.7.5
+Pillow @ file:///Users/runner/miniforge3/conda-bld/pillow_1594212124634/work
+pluggy @ file:///Users/runner/miniforge3/conda-bld/pluggy_1592827481065/work
+prometheus-client @ file:///home/conda/feedstock_root/build_artifacts/prometheus_client_1590412252446/work
+prompt-toolkit @ file:///home/conda/feedstock_root/build_artifacts/prompt-toolkit_1597061474901/work
+ptyprocess==0.6.0
+py @ file:///home/conda/feedstock_root/build_artifacts/py_1593088446458/work
+pycparser @ file:///home/conda/feedstock_root/build_artifacts/pycparser_1593275161868/work
+Pygments==2.6.1
+PyJWT==1.7.1
+pymongo==3.10.1
+pyOpenSSL==19.1.0
+pyparsing==2.4.7
+pyprojroot==0.2.0
+PyQt5==5.12.3
+PyQt5-sip==4.19.18
+PyQtChart==5.12
+PyQtWebEngine==5.12.1
+pyrsistent==0.16.0
+PySocks==1.7.1
+pytest==6.0.1
+python-dateutil==2.8.1
+pytz==2020.1
+pyzmq==19.0.2
+qtconsole @ file:///home/conda/feedstock_root/build_artifacts/qtconsole_1597691775247/work
+QtPy==1.9.0
+redis==3.5.3
+requests==2.23.0
+requests-oauthlib @ file:///home/conda/feedstock_root/build_artifacts/requests-oauthlib_1595492159598/work
+scikit-learn @ file:///Users/runner/miniforge3/conda-bld/scikit-learn_1596546098695/work
+scipy @ file:///Users/runner/miniforge3/conda-bld/scipy_1595583614364/work
+Send2Trash==1.5.0
+six @ file:///home/conda/feedstock_root/build_artifacts/six_1590081179328/work
+-e git+https://github.com/fangfangsheng/Streaming_Sentiment.git@23558a30a4fb0d8432a5e8f137b09b816d705cf9#egg=Streaming_Twitter&subdirectory=src
+terminado==0.8.3
+testpath==0.4.4
+textblob==0.15.3
+threadpoolctl @ file:///tmp/tmp79xdzxkt/threadpoolctl-2.1.0-py3-none-any.whl
+toml @ file:///home/conda/feedstock_root/build_artifacts/toml_1589469402899/work
+tornado==6.0.4
+traitlets==4.3.3
+tweepy==3.8.0
+urllib3 @ file:///home/conda/feedstock_root/build_artifacts/urllib3_1595434816409/work
+wcwidth @ file:///home/conda/feedstock_root/build_artifacts/wcwidth_1595859607677/work
+webencodings==0.5.1
+Werkzeug==1.0.1
+widgetsnbextension @ file:///Users/runner/miniforge3/conda-bld/widgetsnbextension_1594164367905/work
+zipp==3.1.0
