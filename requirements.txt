@@ -98,5 +98,4 @@ urllib3 @ file:///home/conda/feedstock_root/build_artifacts/urllib3_159543481640
 wcwidth @ file:///home/conda/feedstock_root/build_artifacts/wcwidth_1595859607677/work
 webencodings==0.5.1
 Werkzeug==1.0.1
-widgetsnbextension @ file:///Users/runner/miniforge3/conda-bld/widgetsnbextension_1594164367905/work
 zipp==3.1.0
