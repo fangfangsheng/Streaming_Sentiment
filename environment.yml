@@ -6,8 +6,6 @@ dependencies:
 - numpy=1.19.1
 - pandas=1.1.0
 - matplotlib=3.3.1
-- jupyter
-- jupyterlab
 - scipy=1.5.2
 - scikit-learn=0.23.2
 - pyprojroot=0.2.0
