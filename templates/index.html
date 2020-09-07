@@ -28,8 +28,9 @@
           </h4>
         </div>
       </div>
-
+     
       {% for tweet in tweets %}
+
         <div class="row my-4">
           <div class="col">
             <div class="card {{ 'positive' if tweet.data.polarity > 0 }} {{ 'negative' if tweet.data.polarity < 0 }}">
@@ -37,20 +38,49 @@
                 <p class="card-text">
                   {{ tweet.filtered_text()|safe }}
                 </p>
+                
+                <!-- <h6 class="sentiment", text-align='center'>{{tweet.data.polarity}}</h4> -->
+                
                 <br />
                 <div class="card-text">
                   <img alt="{{ tweet.data.username }}" height="48" src="{{ tweet.data.profile_image_url }}" width="48" class="mr-3"/>
                   {{ tweet.data.name }} (<a href="{{ tweet.user_link() }}" target="_blank">{{ tweet.data.username }}</a>)
                 </div>
               </div>
+
+              <div class="card-body">
+                <div class="sentiment"> {{tweet.data.polarity}}</div>
+              </div> 
+
+              
             </div>
           </div>
         </div>
+
+       
       {% endfor %}
+
+      <script>
+        var emojis = document.querySelectorAll('.sentiment');
+        // var polarities = {{tweets}} ;
+        for (var i = 0; i < emojis.length; i++){
+          if (emojis[i].innerText > 0){
+            emojis[i].innerText = '💡 Sentiment prediction is 😀.';
+          } else{
+            emojis[i].innerText = '💡 Sentiment prediction is 😞.';
+          }
+          
+        }
+      </script> 
+
+    
 
       <div class="text-center mb-4">
         <a class="btn btn-primary" href="/" role="button">Refresh</a>
       </div>
+    
+      
+      
 
 
     </div>
